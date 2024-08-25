@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>【python】Highlight</title>
+  <link rel="shortcut icon" type="image/png" href="https://highlightjs.org/static/favicon.png">
+  
+  <!-- 参考文档：https://www.jb51.net/article/205778.htm, https://highlightjs.org/#usage -->
+  <!-- link rel="stylesheet" href="./styles/base16/default-dark.css" -->
+  <!-- link rel="stylesheet" href="./styles/default.css" -->
+  
+  <link rel="stylesheet" href="../../styles/highlight/a11y-dark.css">
+  
+  <script src="../../js/highlight/highlight.min.js" type="text/javascript" ></script>
+  <script>hljs.highlightAll();</script>
+  
+</head>
+<body>
+我的python代码：
+<pre>
+<code class="language-python">
+#coding=utf-8 合并两个有序链表：
+"""
+问题描述：将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+解题思路：迭代法，创建哑节点作为新链表的起点，比较两个链表的节点值，将较小值的节点添加到新链表，并移动对应链表的指针。
+Python代码示例:
+"""
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def mergeTwoLists(l1, l2):
+    dummy = ListNode()
+    tail = dummy
+    while l1 and l2:
+        if l1.val < l2.val:
+            tail.next, l1 = l1, l1.next
+        else:
+            tail.next, l2 = l2, l2.next
+        tail = tail.next
+    tail.next = l1 or l2
+    return dummy.next
+</code>
+</pre>
+	
+	<!-- 1. Define some markup -->
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target="code">复制代码</button>
+	
+	<!-- 2. Include library -->
+  <script src="../../js/highlight/clipboard.min.js"></script>
+
+  <!-- 3. Instantiate clipboard -->
+  <script>
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function (e) {
+      console.info('Action:', e.action);
+      console.info('Trigger:', e.trigger);
+      console.info('Text:', e.text);
+      alert("复制成功！选中内容已在粘贴板...");
+    });
+    
+    clipboard.on('error', function (e) {
+      console.info('Action:', e.action);
+      console.info('Trigger:', e.trigger);
+      console.info('Text:', e.text);
+      alert("复制失败，Action: "+ e.action + ", Trigger:" + e.trigger +", Text: "+ e.text);
+    });
+  </script>
+	
+</body>
+</html>

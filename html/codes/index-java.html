@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>【java】Highlight</title>
+  <link rel="shortcut icon" type="image/png" href="../../images/brand/logo-right.png">
+  <!-- 参考文档：https://www.jb51.net/article/205778.htm, https://highlightjs.org/#usage -->
+  <!-- link rel="stylesheet" href="../../styles/base16/default-dark.css" -->
+  <!-- link rel="stylesheet" href="../../styles/default.css" -->
+  <link rel="stylesheet" href="../../styles/highlight/a11y-dark.css">
+  <link rel="stylesheet" href="../../styles/highlight/line-numbers.css">
+  <script src="../../js/highlight/highlight.min.js" type="text/javascript" ></script>
+  <script src="../../js/highlight/highlightjs-line-numbers.min.js" type="text/javascript" ></script>
+  <script>
+  	// 初始化Highlight.js
+  	hljs.initHighlightingOnLoad();
+		hljs.initLineNumbersOnLoad({
+			// 让单行的时候也显示行号
+			singleLine: true
+		});
+  	hljs.highlightAll();
+  </script>
+</head>
+<body>
+
+<div id="contianer">
+<h1>我的java代码：
+    <img class="btn" data-clipboard-action="copy" data-clipboard-target="#javaCode01" src="../../images/copy.png"
+         style="cursor:pointer" alt="复制代码">
+</h1>
+<pre class="java">
+<code id="javaCode01" class="language-java" data-ln-single-line="true" data-ln-start-from="0">
+/**
+ * 判断术语词性是否为名词性
+ *
+ * @param term 术语
+ * @return true=是名词性，false=不是名词性
+ */
+public static boolean isNameNature(Term term) {
+    if (Objects.isNull(term)) {
+        return false;
+    }
+    for(String n : N_TERM_NATURES) {
+        if (term.nature.startsWith(n)) {
+            return true;
+        }
+    }
+    return false;
+}
+</code>
+</pre>
+
+
+<h2>代码块2: python语言
+    <!-- 1. Define some markup -->
+    <button class="btn" data-clipboard-action="copy" data-clipboard-target="#pythonCode01"
+            onMouseOver="this.style.cursor='pointer';" >复制代码</button>
+</h2>
+<pre class="python">
+	<!-- 可以通过 class="nohljsln" 来取消行号 -->
+	<code id="pythonCode01" data-ln-single-line="true">print("hello world!")</code>
+</pre>
+</div>
+	
+<!-- 2. Include library -->
+<script src="../../js/highlight/clipboard.min.js"></script>
+
+<!-- 3. Instantiate clipboard -->
+<script>
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function (e) {
+      alert("复制成功，请去粘贴...");
+    });
+    
+    clipboard.on('error', function (e) {
+      console.info('Action:', e.action);
+      console.info('Trigger:', e.trigger);
+      console.info('Text:', e.text);
+      alert("复制失败，请联系开发者!!!");
+    });
+</script>
+</body>
+</html>

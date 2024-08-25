@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>【sql】Highlight</title>
+  <link rel="shortcut icon" type="image/png" href="https://highlightjs.org/static/favicon.png">
+  
+  <!-- 参考文档：https://www.jb51.net/article/205778.htm, https://highlightjs.org/#usage -->
+  <!-- link rel="stylesheet" href="./styles/base16/default-dark.css" -->
+  <!-- link rel="stylesheet" href="./styles/default.css" -->
+  
+  <link rel="stylesheet" href="../../styles/highlight/a11y-dark.css">
+  
+  <script src="../../js/highlight/highlight.min.js" type="text/javascript" ></script>
+  <script>hljs.highlightAll();</script>
+  
+</head>
+<body>
+我的sql代码：
+<pre>
+<code class="language-sql">
+-- 按天投诉工单数
+select 
+date_format(t.date_created, '%Y-%m-%d') as '年-月-日', 
+count(distinct t.order_no) as '进件工单数'
+from mos.complaints_order t
+where t.is_delete = 0
+and t.date_created >= '2024-08-19 00:00:00'
+-- and t.order_flag = 'UN'
+group by DATE_FORMAT(t.date_created, '%Y-%m-%d')
+order by DATE_FORMAT(t.date_created, '%Y-%m-%d')
+;
+</code>
+</pre>
+	
+	<!-- 1. Define some markup -->
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target="code">复制代码</button>
+	
+	<!-- 2. Include library -->
+  <script src="../../js/highlight/clipboard.min.js"></script>
+
+  <!-- 3. Instantiate clipboard -->
+  <script>
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function (e) {
+      console.info('Action:', e.action);
+      console.info('Trigger:', e.trigger);
+      console.info('Text:', e.text);
+      alert("复制成功！选中内容已在粘贴板...");
+    });
+    
+    clipboard.on('error', function (e) {
+      console.info('Action:', e.action);
+      console.info('Trigger:', e.trigger);
+      console.info('Text:', e.text);
+      alert("复制失败，Action: "+ e.action + ", Trigger:" + e.trigger +", Text: "+ e.text);
+    });
+  </script>
+	
+</body>
+</html>
