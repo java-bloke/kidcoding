@@ -1,15 +1,15 @@
 
-# ´úÂë¿é¸ßÁÁ¿É¸´ÖÆÏÔÊ¾js²å¼şhighlight.js+clipboard.jsÕûºÏ
+# ä»£ç å—é«˜äº®å¯å¤åˆ¶æ˜¾ç¤ºjsæ’ä»¶highlight.js+clipboard.jsæ•´åˆ
 
-## 1¡¢´úÂë¸ßÁÁ
-### 1.1¸ßÁÁ²å¼ş£º¡¾highlight.js¡¿
-[Ô­ÎÄ](https://www.jb51.net/article/205778.htm)
+## 1ã€ä»£ç é«˜äº®
+### 1.1é«˜äº®æ’ä»¶ï¼šã€highlight.jsã€‘
+[åŸæ–‡](https://www.jb51.net/article/205778.htm)
 [highlightjs: Usage](https://highlightjs.org/#usage)
-[highlightjs: ÏÂÔØ](https://highlightjs.org/download)
+[highlightjs: ä¸‹è½½](https://highlightjs.org/download)
 [highlightjs: Demo](https://highlightjs.org/static/demo/)
 [GitHub: highlight.js](https://github.com/highlightjs/highlight.js)
 
-### 1.2³£ÓÃÓïÑÔÑùÊ½Common Languages styles£º
+### 1.2å¸¸ç”¨è¯­è¨€æ ·å¼Common Languages stylesï¼š
 |-------|-------|-------|-------|-------|-------|
 | bash | c | cpp | csharp | css | diff |
 | go | graphql | ini | java | javascript | json |
@@ -19,22 +19,22 @@
 | swift | typescript | vbnet | wasm | xml | yaml |
 
 
-### 1.3Èç¹ûÄãµÄ´úÂëÀï°üº¬±êÇ©£¬¼ÇµÃ½«±êÇ©µÄ"<"»»³É"&lt"£¬°Ñ">"»»³É"&gt"
-| ±êÇ© | ×ªÒå |
+### 1.3å¦‚æœä½ çš„ä»£ç é‡ŒåŒ…å«æ ‡ç­¾ï¼Œè®°å¾—å°†æ ‡ç­¾çš„"<"æ¢æˆ"&lt"ï¼ŒæŠŠ">"æ¢æˆ"&gt"
+| æ ‡ç­¾ | è½¬ä¹‰ |
 |-------|-------|
 | < | &lt |
 | > | &gt |
-PS£º¿ÉÍ¨¹ıÍøÉÏÔÚÏßHtml×ªÒå¹¤¾ß½øĞĞ´úÂë×ªÒå´¦Àí
+PSï¼šå¯é€šè¿‡ç½‘ä¸Šåœ¨çº¿Htmlè½¬ä¹‰å·¥å…·è¿›è¡Œä»£ç è½¬ä¹‰å¤„ç†
 
 ---  
-## 2¡¢¸´ÖÆ²å¼ş£º¡¾clipboard.js¡¿
-[ÏÂÔØ: clipboard.js](https://github.com/zenorocha/clipboard.js)
+## 2ã€å¤åˆ¶æ’ä»¶ï¼šã€clipboard.jsã€‘
+[ä¸‹è½½: clipboard.js](https://github.com/zenorocha/clipboard.js)
 
 
 ---  
-## 3¡¢ÏÔÊ¾ĞĞºÅ£º¡¾highlightjs-line-numbers.js¡¿
-[Ô­ÎÄ](https://blog.csdn.net/qq_37177115/article/details/114028872)
-[ÒıÈëĞĞºÅ](https://github.com/wcoder/highlightjs-line-numbers.js)
+## 3ã€æ˜¾ç¤ºè¡Œå·ï¼šã€highlightjs-line-numbers.jsã€‘
+[åŸæ–‡](https://blog.csdn.net/qq_37177115/article/details/114028872)
+[å¼•å…¥è¡Œå·](https://github.com/wcoder/highlightjs-line-numbers.js)
 
 
 
