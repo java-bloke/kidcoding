@@ -10,20 +10,21 @@
 [GitHub: highlight.js](https://github.com/highlightjs/highlight.js)
 
 ### 1.2常用语言样式Common Languages styles：
-|-------|-------|-------|-------|-------|-------|
-| bash | c | cpp | csharp | css | diff |
-| go | graphql | ini | java | javascript | json |
-| kotlin | less | lua | makefile | markdown | objectivec |
-| perl | php-template | php | plaintext | python-repl | python |
-| r | ruby | rust | scss | shell | sql |
-| swift | typescript | vbnet | wasm | xml | yaml |
+| 语言1   | 语言2        | 语言3   | 语言4     | 语言5       | 语言6       |
+|--------|--------------|-------|-----------|-------------|------------|  
+| bash   | c            | cpp   | csharp    | css         | diff       |  
+| go     | graphql      | ini   | java      | javascript  | json       |  
+| kotlin | less         | lua   | makefile  | markdown    | objectivec |  
+| perl   | php-template | php   | plaintext | python-repl | python     |  
+| r      | ruby         | rust  | scss      | shell       | sql        |  
+| swift  | typescript   | vbnet | wasm      | xml         | yaml       |
 
 
 ### 1.3如果你的代码里包含标签，记得将标签的"<"换成"&lt"，把">"换成"&gt"
 | 标签 | 转义 |
-|-------|-------|
-| < | &lt |
-| > | &gt |
+|----|-------|
+| "<"  | &lt |
+| ">"  | &gt |
 PS：可通过网上在线Html转义工具进行代码转义处理
 
 ---  
