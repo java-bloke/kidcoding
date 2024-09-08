@@ -16,14 +16,15 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
     <!-- Icon Fonts -->
-    <link href="../fonts/icomoon/style.css" rel="stylesheet">
+    <link href="../styles/icons/icon-style.css" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="../js/plugins/highlight/solarized-light.css" rel="stylesheet">
+    <link href="../styles/highlight/solarized-light.css" rel="stylesheet">
     <link href="../styles/style.css" rel="stylesheet">
 
     <!-- Modernizer -->
-    <script type="text/javascript" src="../js/vendor/modernizr-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/framework/modernizr-3.3.1.min.js"></script>
+    <script src="../js/framework/hover-preview-image.js" type="text/javascript" ></script>
   </head>
   <body>
      <div class="ace-wrapper">
@@ -33,7 +34,7 @@
                      <div class="ace-head-row">
                          <div id="ace-head-col1" class="ace-head-col text-left">
                              <a id="ace-logo" class="ace-logo" href="../index.html">
-                                <img src="img/uploads/brand/logo.svg" alt="ace resume"><span>.Certy</span>
+                                <img src="../images/brand/logo-right.png" alt="ace resume"><span>Hello.Jerry</span>
                              </a>
                          </div>
                          
@@ -41,12 +42,11 @@
                              <div class="ace-nav-container ace-container hidden-sm hidden-xs">
                                  <nav id="ace-main-nav">
                                     <ul class="clear-list">
-										<li><a href="../index.html">about</a></li>
-										<li><a href="subjects.html">portfolio</a>
-										<li><a href="students.html">references</a></li>
-										<li><a href="search.html">search</a></li>
-										<li><a href="projects.html">category</a></li>
-										<li><a href="contact.html">contact</a></li>
+                                        <li><a href="../index.html">自我介绍</a></li>
+                                        <li><a href="../html/subjects.html">编程科目</a>
+                                        <li><a href="../html/students.html">同学评价</a></li>
+                                        <li><a href="../html/projects.html">作品展示</a></li>
+                                        <li><a href="../html/contact.html">联系老师</a></li>
 									</ul>
                                  </nav>
                              </div>
@@ -65,43 +65,53 @@
         
         <nav id="ace-nav-sm" class="ace-nav hidden-lg hidden-md">
             <ul class="clear-list">
-				<li>
-					<a href="../index.html" data-tooltip="Home"><img class="avatar avatar-42" src="../images/avatar/avatar-42x42.png" alt=""></a>
-				</li>
-				<li>
-					<a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
-				</li>
-				<li class="active">
-					<a href="subjects.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
-				</li>
-				<li>
-					<a href="students.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
-				</li>
-				<li>
-					<a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
-				</li>
-				<li>
-					<a href="projects.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
-				</li>
+                <li>
+                    <a href="../index.html" data-tooltip="主页"><img class="avatar avatar-42" src="../images/avatar/avatar-42x42.png" alt="去首页"></a>
+                </li>
+                <li>
+                    <a href="../index.html" data-tooltip="自我介绍"><span class="ace-icon ace-icon-experience"></span></a>
+                </li>
+                <li>
+                    <a href="../html/subjects.html" data-tooltip="编程科目"><span class="ace-icon ace-icon-portfolio"></span></a>
+                </li>
+                <li>
+                    <a href="../html/students.html" data-tooltip="同学评价"><span class="ace-icon ace-icon-references"></span></a>
+                </li>
+                <li>
+                    <a href="../html/projects.html" data-tooltip="作品展示"><span class="ace-icon ace-icon-blog"></span></a>
+                </li>
+                <li>
+                    <a href="../html/contact.html" data-tooltip="联系老师"><span class="ace-icon ace-icon-contact"></span></a>
+                </li>
 			</ul>
         </nav><!-- #ace-tab-nav-sm -->
 
         <article id="ace-card" class="ace-card bg-primary">
 			<div class="ace-card-inner text-center">
 				<img class="avatar avatar-195" src="../images/avatar/avatar-195x195.png" width="195" height="195" alt="">
-				<h1>Ola Lowe</h1>
-				<p class="text-muted">Florist | Decorator</p>
+                <h1>Jerry(杰瑞)老师</h1>
+                <p class="text-muted">少儿编程 | 软件开发</p>
 				<ul class="ace-social clear-list">
-					<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+                    <li><a href="../index.html" title="去首页"><img src="../images/logo/index.32x32.png" alt="" ></a></li>
+                    <li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/vx.add.friend-green.jpg')"
+                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/vx.add.friend-green.jpg')"
+                           onmouseout="vanishImg('hoverImageDiv')" onfocus="" onblur="">
+                        <img src="../images/logo/vx1.32x32.png" alt="加微信"></a></li>
+                    <li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/qq.add.friend-blue.jpg')"
+                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/qq.add.friend-blue.jpg')"
+                           onmouseout="vanishImg('hoverImageDiv')"  onfocus="" onblur="">
+                        <img src="../images/logo/qq1.32x32.png" alt="加QQ"></a></li>
+                    <li><a href="javascript:copyMobileToClipboard('15216602141');" title="点击复制电话号码: 15216602141"  onfocus="" onblur="">
+                        <img src="../images/logo/mobile1.32x32.png" alt="" ></a></li>
 				</ul>
 			</div>
+            <!--Hover动态显示的图片-->
+            <div id="hoverImageDiv" class="hover-preview-image-div">
+                <img id="hoverDisplayImg" class="hover-preview-img" src="" alt="用手机扫码">
+            </div>
 
 			<footer class="ace-card-footer">
-				<a class="btn btn-lg btn-block btn-thin btn-upper " href="#">Download Resume</a>
+                <a class="btn btn-lg btn-block btn-thin btn-upper " href="./contact.html">联系老师</a>
 			</footer>
 		</article><!-- #ace-card -->
 
@@ -114,24 +124,24 @@
                             <div id="ace-nav-scroll">
                                 <nav id="ace-nav" class="ace-nav">
                                     <ul class="clear-list">
-										<li>
-											<a href="../index.html" data-tooltip="Home"><img class="avatar avatar-42" src="../images/avatar/avatar-42x42.png" alt=""></a>
-										</li>										
-										<li>
-											<a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
-										</li>
-										<li class="active">
-											<a href="subjects.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
-										</li>
-										<li>
-											<a href="students.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
-										</li>
-										<li>
-											<a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
-										</li>
-										<li>
-											<a href="projects.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
-										</li>
+                                        <li>
+                                            <a href="../index.html" data-tooltip="主页"><img class="avatar avatar-42" src="../images/avatar/avatar-42x42.png" alt="去首页"></a>
+                                        </li>
+                                        <li>
+                                            <a href="../index.html" data-tooltip="自我介绍"><span class="ace-icon ace-icon-experience"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../html/subjects.html" data-tooltip="编程科目"><span class="ace-icon ace-icon-portfolio"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../html/students.html" data-tooltip="同学评价"><span class="ace-icon ace-icon-references"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../html/projects.html" data-tooltip="作品展示"><span class="ace-icon ace-icon-blog"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../html/contact.html" data-tooltip="联系老师"><span class="ace-icon ace-icon-contact"></span></a>
+                                        </li>
 									</ul>
                                 </nav>
                             </div>
@@ -154,15 +164,18 @@
 						<!-- START: PAGE CONTENT -->
 
 <div class="padd-box">
-    <h1 class="title-lg text-upper">portfolio</h1>
+    <h1 class="title-lg text-upper">编程科目</h1>
 </div>
 
 
 <div class="pf-wrap">
     <div class="pf-filter padd-box">
-        <button data-filter="*">all</button>
-        <button data-filter=".photography">photography</button>
-        <button data-filter=".design">design</button>
+        <button data-filter="*">全部</button>
+        <button data-filter=".photography">ScratchJr（启蒙）</button>
+        <button data-filter=".design">C++（过渡）</button>
+        <button data-filter=".design">JavaScript</button>
+        <button data-filter=".design">Python</button>
+        <button data-filter=".design">Java</button>
     </div><!-- .pf-filter -->
 
     <div class="pf-grid">
@@ -561,14 +574,20 @@
 			<article class="ace-card bg-primary">
 				<div class="ace-card-inner text-center">
 					<img class="avatar avatar-195" src="../images/avatar/avatar-195x195.png" width="195" height="195" alt="">
-					<h1>Ola Lowe</h1>
-					<p class="text-muted">Florist | Decorator</p>
+                    <h1>Jerry(杰瑞)老师</h1>
+                    <p class="text-muted">少儿编程 | 软件开发</p>
 					<ul class="ace-social clear-list">
-						<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+                        <li><a href="../index.html" title="去首页"><img src="../images/logo/index.32x32.png" alt="" ></a></li>
+                        <li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/vx.add.friend-green.jpg')"
+                               onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/vx.add.friend-green.jpg')"
+                               onmouseout="vanishImg('hoverImageDiv')" onfocus="" onblur="">
+                            <img src="../images/logo/vx1.32x32.png" alt="加微信"></a></li>
+                        <li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/qq.add.friend-blue.jpg')"
+                               onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','../images/contact/qq.add.friend-blue.jpg')"
+                               onmouseout="vanishImg('hoverImageDiv')"  onfocus="" onblur="">
+                            <img src="../images/logo/qq1.32x32.png" alt="加QQ"></a></li>
+                        <li><a href="javascript:copyMobileToClipboard('15216602141');" title="点击复制电话号码: 15216602141"  onfocus="" onblur="">
+                            <img src="../images/logo/mobile1.32x32.png" alt="" ></a></li>
 					</ul>
 				</div>				
 			</article><!-- #ace-card -->
@@ -704,7 +723,7 @@
 </div><!-- .ace-wrapper -->
 
 <!-- Scripts -->
-<script type="text/javascript" src="../js/vendor/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/framework/jquery-1.12.4.min.js"></script>
 
 
 <!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyDiwY_5J2Bkv2UgSeJa4NOKl6WUezSS9XA"></script>--->

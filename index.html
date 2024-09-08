@@ -4,26 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Jerry(杰瑞)老师</title>
     <meta name="description" content="">
-
+    <title>Jerry(杰瑞)老师</title>
     <link rel="apple-touch-icon" href="./images/brand/logo-right.png">
     <link rel="shortcut icon" href="./images/brand/logo-right.png">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
-    <!-- Icon Fonts -->
-    <link href="fonts/icomoon/style.css" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="js/plugins/highlight/solarized-light.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-
-    <!-- Modernizer -->
-    <script type="text/javascript" src="js/vendor/modernizr-3.3.1.min.js"></script>
+    <link href="styles/icons/Quicksand.css" rel="stylesheet">
+    <link href="styles/icons/Pacifico.css" rel="stylesheet">
+    <link href="styles/icons/icon-style.css" rel="stylesheet">
+    <link href="./styles/highlight/solarized-light.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+    <script src="./js/framework/modernizr-3.3.1.min.js" type="text/javascript" ></script>
+    <script src="./js/framework/hover-preview-image.js" type="text/javascript" ></script>
   </head>
   <body>
      <div class="ace-wrapper">
@@ -32,8 +23,8 @@
                  <div class="ace-head-container ace-container">
                      <div class="ace-head-row">
                          <div id="ace-head-col1" class="ace-head-col text-left">
-                             <a id="ace-logo" class="ace-logo" href="index.html">
-                                <img src="images/brand/logo-right.png" alt="ace resume"><span>Hello.Jerry</span>
+                             <a id="ace-logo" class="ace-logo" href="./index.html">
+                                <img src="./images/brand/logo-right.png" alt="Jerry"><span>Hello.Jerry</span>
                              </a>
                          </div>
                          
@@ -41,11 +32,11 @@
                              <div class="ace-nav-container ace-container hidden-sm hidden-xs">
                                  <nav id="ace-main-nav">
                                     <ul class="clear-list">
-										<li><a href="index.html">自我介绍</a></li>
-										<li><a href="html/subjects.html">编程科目</a>
-										<li><a href="html/students.html">同学评价</a></li>
-										<li><a href="html/projects.html">作品展示</a></li>
-										<li><a href="html/contact.html">联系老师</a></li>
+										<li><a href="./index.html">自我介绍</a></li>
+										<li><a href="./html/subjects.html">编程科目</a>
+										<li><a href="./html/students.html">同学评价</a></li>
+										<li><a href="./html/projects.html">作品展示</a></li>
+										<li><a href="./html/contact.html">联系老师</a></li>
 									</ul>
                                  </nav>
                              </div>
@@ -65,23 +56,23 @@
         <nav id="ace-nav-sm" class="ace-nav hidden-lg hidden-md">
             <ul class="clear-list">
 				<li>
-					<a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="images/avatar/avatar-42x42.png" alt=""></a>
+					<a href="./index.html" data-tooltip="主页"><img class="avatar avatar-42" src="./images/avatar/avatar-42x42.png" alt="去首页"></a>
+				</li>
+                <li>
+					<a href="./index.html" data-tooltip="自我介绍"><span class="ace-icon ace-icon-experience"></span></a>
 				</li>
 				<li>
-					<a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
+					<a href="./html/subjects.html" data-tooltip="编程科目"><span class="ace-icon ace-icon-portfolio"></span></a>
 				</li>
 				<li>
-					<a href="html/subjects.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
+					<a href="./html/students.html" data-tooltip="同学评价"><span class="ace-icon ace-icon-references"></span></a>
 				</li>
 				<li>
-					<a href="html/students.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
+					<a href="./html/projects.html" data-tooltip="作品展示"><span class="ace-icon ace-icon-blog"></span></a>
 				</li>
-				<li>
-					<a href="html/contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
-				</li>
-				<li>
-					<a href="html/projects.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
-				</li>
+                <li>
+                    <a href="./html/contact.html" data-tooltip="联系老师"><span class="ace-icon ace-icon-contact"></span></a>
+                </li>
 			</ul>
         </nav><!-- #ace-tab-nav-sm -->
 
@@ -91,16 +82,25 @@
 				<h1>Jerry(杰瑞)老师</h1>
 				<p class="text-muted">少儿编程 | 软件开发</p>
 				<ul class="ace-social clear-list">
-					<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
-					<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+					<li><a href="index.html" title="去首页"><img src="./images/logo/index.32x32.png" alt="" ></a></li>
+					<li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/vx.add.friend-green.jpg')"
+                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/vx.add.friend-green.jpg')"
+                           onmouseout="vanishImg('hoverImageDiv')" onfocus="" onblur="">
+                        <img src="./images/logo/vx1.32x32.png" alt="加微信"></a></li>
+					<li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/qq.add.friend-blue.jpg')"
+                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/qq.add.friend-blue.jpg')"
+                           onmouseout="vanishImg('hoverImageDiv')"  onfocus="" onblur="">
+                        <img src="./images/logo/qq1.32x32.png" alt="加QQ"></a></li>
+					<li><a href="javascript:copyMobileToClipboard('15216602141');" title="点击复制电话号码: 15216602141"  onfocus="" onblur="">
+                        <img src="./images/logo/mobile1.32x32.png" alt="" ></a></li>
 				</ul>
 			</div>
-
+            <!--Hover动态显示的图片-->
+            <div id="hoverImageDiv" class="hover-preview-image-div">
+                <img id="hoverDisplayImg" class="hover-preview-img" src="" alt="用手机扫码">
+            </div>
 			<footer class="ace-card-footer">
-				<a class="btn btn-lg btn-block btn-thin btn-upper " href="#">Download Resume</a>
+				<a class="btn btn-lg btn-block btn-thin btn-upper " href="./html/contact.html">联系老师</a>
 			</footer>
 		</article><!-- #ace-card -->
 
@@ -114,23 +114,23 @@
                                 <nav id="ace-nav" class="ace-nav">
                                     <ul class="clear-list">
 										<li>
-											<a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="images/avatar/avatar-42x42.png" alt=""></a>
-										</li>									
-										<li>
-											<a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
+											<a href="./index.html" data-tooltip="主页"><img class="avatar avatar-42" src="./images/avatar/avatar-42x42.png" alt="去首页"></a>
 										</li>
-										<li>
-											<a href="html/subjects.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
-										</li>
-										<li>
-											<a href="html/students.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
-										</li>
-										<li>
-											<a href="html/contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
-										</li>
-										<li>
-											<a href="html/projects.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
-										</li>
+                                        <li>
+                                            <a href="./index.html" data-tooltip="自我介绍"><span class="ace-icon ace-icon-experience"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="./html/subjects.html" data-tooltip="编程科目"><span class="ace-icon ace-icon-portfolio"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="./html/students.html" data-tooltip="同学评价"><span class="ace-icon ace-icon-references"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="./html/projects.html" data-tooltip="作品展示"><span class="ace-icon ace-icon-blog"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="./html/contact.html" data-tooltip="联系老师"><span class="ace-icon ace-icon-contact"></span></a>
+                                        </li>
 									</ul>
                                 </nav>
                             </div>
@@ -154,54 +154,71 @@
     <div class="padd-box clear-mrg">
         <section class="section brd-btm">
             <div class="row">
-                <div class="col-sm-12 clear-mrg text-box">
-                    <h2 class="title-lg text-upper">About Me</h2>
-
-                    <p><b>Hello, I’m Jerry!</b><br>
-                        Logo or your Company Name, unless of course you are Microsoft or the Yellow Pages online directorye core of
-                        your marketing, the central theme around your products and services.
-                        Your brand is not your Logo or your Company Name, unless of course you are Microsoft or the Yellow Pages
-                        online directory.</p>
-
-                    <p class="text-right">
-                        <img src="images/uploads/signature.png" alt="">
-                    </p>
-                </div>
+                <p class="col-sm-12 clear-mrg text-box">
+                    <h2 class="title-lg text-upper">老师自述</h2>
+                    <h4>Hello, I’m Jerry!</h4>
+                    <div>
+                        <h4>一、个人介绍👨‍🎓</h4>
+                        <ul>
+                            <li>-👋大家好：我是一名爱跑步会玩魔方的程序猿；大家可以叫我阿袁老师，或者Jerry(杰瑞)老师。</li>
+                            <li>-👀我喜欢：计算机编程、学习编程技术、玩魔方，还有运动🏀⚽🏓🤽锻炼身体，乐于分享。</li>
+                            <li>-🌱最近在：学习少儿编程相关的课程，和制作相关作品 📚[<a href="https://java-bloke.github.io/kidcoding/">少儿编程</a>]。</li>
+                            <li>-💞️希望能：通过课件和作品得到大家的喜爱点赞👍和关注💗，让我们在编程世界里共同成长！</li>
+                            <li>-📫联系我：💌邮箱<a href="mailto:java1826@163.com">java1826@163.com</a>、💬微信号JavaBloke (或搜索手机：15216602141)。</li>
+                            <li>-😄请叫我：阿袁老师、Jerry(动画片里那只聪明的小老鼠)老师。</li>
+                        </ul>
+                    </div>
+                    <div >
+                        <h4>二、工作经历✍️</h4>
+                        <ul>
+                            <li>-2009年大学计算机专业毕业，至今已从业<span style="font-weight: bold; background-color: red; color: white;">15年+</span>软件开发经验；</li>
+                            <li>-2009~2011年，吉贝克信息技术有限公司（GBICC - Global Business Intelligence Consulting Corp.）🌐[<a href="https://www.gbicc.net/">官网</a>]，研发团队150+人，担任Java开发工程师；</li>
+                            <li>-2011年~2014年，上海证券交易所（英文SSE：Shanghai Stock Exchange，中文简称：上交所）🌐[<a href="https://www.sse.com.cn/">官网</a>]，研发团队200+人，担任Java开发工程师；</li>
+                            <li>-2014年~2020年，平安好房|平安城科（中国平安）🌐[<a href="https://www.pingan.com/">官网</a>]，研发团队300+人，担任高级Java开发工程师；</li>
+                            <li>-2020年~今，奇富科技（360金融|360数科）🌐[<a href="https://www.qifu.tech/">官网</a>]，2018年美国纳斯达克交易所上市/2022年港交所上市，技术团队300+人，担任资深Java开发工程师；</li>
+                            <li>-人生信条：有志者，事竟成！让我们一起怀揣这份挚爱，坚持耕耘，必有所收获💯，待到功成名就🏅，才是快乐之时。</li>
+                            <li>-个人热爱编程技术学习、敢于挑战和创新，乐于分享，2024年有过公益讲师经验；</li>
+                        </ul>
+                    </div>
+                    <div id="ace-head-signature" class="text-right">
+                        <p id="ace-logo-signature" class="ace-logo" >
+                            <img src="./images/brand/logo-right.png" alt="Jerry"><span>Jerry</span>
+                        </p>
+                    </div>
             </div>
         </section><!-- .section -->
 
         <section class="section brd-btm">
             <div class="row">
                 <div class="col-sm-6 clear-mrg">
-                    <h2 class="title-thin text-muted">personal information</h2>
+                    <h2 class="title-thin text-muted">个人信息</h2>
 
                     <dl class="dl-horizontal clear-mrg">
-                        <dt class="text-upper">Full Name</dt>
-                        <dd>Ola Maria Lowe</dd>
+                        <dt class="text-upper">老师昵称：</dt>
+                        <dd>Jerry(杰瑞)老师</dd>
 
-                        <dt class="text-upper">D.o.b.</dt>
-                        <dd>05 Sep 1986</dd>
+                        <dt class="text-upper">出生日期：</dt>
+                        <dd>1987-06-26</dd>
 
-                        <dt class="text-upper">address</dt>
-                        <dd>24058, Belgium, Brussels,
-                            Liutte 27, BE</dd>
+                        <dt class="text-upper">联系电话：</dt>
+                        <dd>152 1660 2141</dd>
 
-                        <dt class="text-upper">e-mail</dt>
-                        <dd><a href="mailto:robertsmith@company.com">robertsmith@company.com</a></dd>
+                        <dt class="text-upper">电子邮箱：</dt>
+                        <dd><a href="mailto:java1826@163.com">java1826@163.com</a></dd>
 
-                        <dt class="text-upper">phone</dt>
-                        <dd>+1 256 254 84 56</dd>
+                        <dt class="text-upper">职业岗位：</dt>
+                        <dd>互联网金融·软件开发工程师</dd>
 
-                        <dt class="text-upper">freelance</dt>
-                        <dd>Available</dd>
+                        <dt class="text-upper">联系地址：</dt>
+                        <dd>上海市, 浦东新区, 大团镇, 南芦公路989弄同润蓝美俊庭281号1601室</dd>
                     </dl>
                 </div><!-- .col-sm-6 -->
 
                 <div class="col-sm-6 clear-mrg">
-                    <h2 class="title-thin text-muted">languages</h2>
+                    <h2 class="title-thin text-muted">专业技能（编程语言）</h2>
 
                     <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
-                        <strong class="progress-title">English</strong>
+                        <strong class="progress-title">Java</strong>
                         <span class="progress-bar">
                             <span class="bullet fill"></span>
                             <span class="bullet fill"></span>
@@ -214,11 +231,11 @@
                             <span class="bullet fill"></span>
                             <span class="bullet fill"></span>
                         </span>
-                        <span class="progress-text text-muted">native</span>
+                        <span class="progress-text text-muted">高级</span>
                     </div>
 
                     <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10">
-                        <strong class="progress-title">Spanish</strong>
+                        <strong class="progress-title">Python</strong>
                         <span class="progress-bar">
                             <span class="bullet fill"></span>
                             <span class="bullet fill"></span>
@@ -231,11 +248,11 @@
                             <span class="bullet"></span>
                             <span class="bullet"></span>
                         </span>
-                        <span class="progress-text text-muted">intermediate</span>
+                        <span class="progress-text text-muted">中级</span>
                     </div>
 
                     <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
-                        <strong class="progress-title">Italian</strong>
+                        <strong class="progress-title">C/C++、Scratch</strong>
                         <span class="progress-bar">
                             <span class="bullet fill"></span>
                             <span class="bullet fill"></span>
@@ -248,7 +265,7 @@
                             <span class="bullet"></span>
                             <span class="bullet"></span>
                         </span>
-                        <span class="progress-text text-muted">begginer</span>
+                        <span class="progress-text text-muted">初级</span>
                     </div>
                 </div><!-- .col-sm-6 -->
             </div><!-- .row -->
@@ -257,54 +274,55 @@
         <section class="section brd-btm">
             <div class="row">
                 <div class="col-sm-6 clear-mrg">
-                    <h2 class="title-thin text-muted">professional skills</h2>
+                    <h2 class="title-thin text-muted">专业技能（编程语言）</h2>
 
                     <div class="row">
                         <div class="col-xs-4">
                             <div class="progress-chart ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" data-text="90%" data-value="0.9"></div>
-                                <strong class="progress-title">UX Design</strong>
+                                <strong class="progress-title">Html</strong>
                             </div>
                         </div><!-- .col-xs-4 -->
 
                         <div class="col-xs-4">
                             <div class="progress-chart ace-animate" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" data-text="81%" data-value="0.81"></div>
-                                <strong class="progress-title">PHP & MySql</strong>
+                                <strong class="progress-title">JavaScript</strong>
                             </div>
                         </div><!-- .col-xs-4 -->
 
                         <div class="col-xs-4">
                             <div class="progress-chart ace-animate" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" data-text="66%" data-value="0.66"></div>
-                                <strong class="progress-title">UI Design</strong>
+                                <div class="progress-bar" data-text="78%" data-value="0.78"></div>
+                                <strong class="progress-title">CSS</strong>
                             </div>
                         </div><!-- .col-xs-4 -->
                     </div><!-- .row -->
                 </div><!-- .col-sm-6 -->
 
                 <div class="col-sm-6 clear-mrg">
-                    <h2 class="title-thin text-muted">professional skills</h2>
+                    <h2 class="title-thin text-muted">专业技能（编程语言）</h2>
 
                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">Php & MySQL</strong>
+                        <strong class="progress-title">Spring、SpringBoot</strong>
                         <div class="progress-bar" data-text="90%" data-value="0.9"></div>
                     </div>
 
                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">Javascript</strong>
+                        <strong class="progress-title">Git、Maven</strong>
                         <div class="progress-bar" data-text="80%" data-value="0.8"></div>
                     </div>
 
                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">UX Design</strong>
+                        <strong class="progress-title">Mybatis</strong>
                         <div class="progress-bar" data-text="80%" data-value="0.8"></div>
                     </div>
 
-                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">UI Design</strong>
-                        <div class="progress-bar" data-text="70%" data-value="0.7"></div>
+                    <div class="progress-line ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        <strong class="progress-title">SQL & MySQL & Oracle & MongoDB等</strong>
+                        <div class="progress-bar" data-text="90%" data-value="0.9"></div>
                     </div>
+
                 </div><!-- .col-sm-6 -->
             </div><!-- .row -->
         </section><!-- .section -->
@@ -312,32 +330,31 @@
         <section class="section brd-btm">
             <div class="row">
                 <div class="col-sm-6 clear-mrg">
-                    <h2 class="title-thin text-muted">professional skills</h2>
+                    <h2 class="title-thin text-muted">专业技能（编程语言）</h2>
 
                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">Php & MySQL</strong>
+                        <strong class="progress-title">Redis</strong>
                         <div class="progress-bar" data-text="90%" data-value="0.9"></div>
                     </div>
 
                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">Javascript</strong>
+                        <strong class="progress-title">Dubbo</strong>
                         <div class="progress-bar" data-text="80%" data-value="0.8"></div>
                     </div>
 
                     <div class="progress-line ace-animate" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        <strong class="progress-title">UX Design</strong>
+                        <strong class="progress-title">MQ（RocketMQ、RabbitMQ、Kafka）</strong>
                         <div class="progress-bar" data-text="80%" data-value="0.8"></div>
                     </div>
                 </div><!-- .col-sm-6 -->
 
                 <div class="col-sm-6 clear-mrg">
-                    <h2 class="title-thin text-muted">personal characteristics</h2>
-
+                    <h2 class="title-thin text-muted">个人特质</h2>
                     <ul class="styled-list clear-mrg">
-                        <li>Lake Marcelview</li>
-                        <li>New Tara</li>
-                        <li>Abbeyshire</li>
-                        <li>Kassulkechester</li>
+                        <li>聪明好学，才华横溢</li>
+                        <li>皮实稳重，豁达开明</li>
+                        <li>严明老成，不失幽默</li>
+                        <li>斯文心细，平易近人</li>
                     </ul>
                 </div><!-- .col-sm-6 -->
             </div><!-- .row -->
@@ -346,24 +363,54 @@
         <section class="section brd-btm">
             <div class="row">
                 <div class="col-sm-12 clear-mrg">
-                    <h2 class="title-thin text-muted">interests</h2>
-
+                    <h2 class="title-thin text-muted">兴趣爱好</h2>
                     <ul class="icon-list icon-list-col3 clearfix">
                         <li><span class="ace-icon ace-icon-music"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-blog"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-blog"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-blog"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-blog"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-music"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-blog"></span> North Adella</li>
-                        <li><span class="ace-icon ace-icon-blog"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-qq"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-references"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-wechat"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-git-square"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-contact"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-asterisk"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-html5"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-anchor"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-css3"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-glass"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-envelope-o"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-heart"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-star"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-child"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-user"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-film"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-th-large"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-check"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-signal"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-gear"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-trash-o"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-home"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-file-o"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-clock-o"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-road"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-inbox"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-play-circle-o"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-repeat"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-refresh"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-lock"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-flag"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-headphones"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-tag"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-book"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-bookmark"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-map-marker"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-pencil"></span> North Adella</li>
+                        <li><span class="ace-icon ace-icon-gift"></span> North Adella</li>
                     </ul>
                 </div>
             </div>
         </section><!-- .section -->
 
         <section class="section">
-            <h2 class="title-thin text-muted">Awards and Achievements</h2>
+            <h2 class="title-thin text-muted">奖励与成就</h2>
 
             <div class="row">
                 <div class="col-sm-6 clear-mrg">
@@ -447,13 +494,23 @@
 					<h1>Jerry(杰瑞)老师</h1>
 					<p class="text-muted">少儿编程 | 软件开发</p>
 					<ul class="ace-social clear-list">
-						<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
-						<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+                        <li><a href="./index.html" title="去首页"><img src="./images/logo/index.32x32.png" alt="" ></a></li>
+                        <li><a onmouseover="displayImg('hoverImageDiv2', 'hoverDisplayImg2','./images/contact/vx.add.friend-green.jpg')"
+                               onmousemove="displayImg('hoverImageDiv2', 'hoverDisplayImg2','./images/contact/vx.add.friend-green.jpg')"
+                               onmouseout="vanishImg('hoverImageDiv2')" onfocus="" onblur="">
+                            <img src="./images/logo/vx1.32x32.png" alt="加微信"></a></li>
+                        <li><a onmouseover="displayImg('hoverImageDiv2', 'hoverDisplayImg2','./images/contact/qq.add.friend-blue.jpg')"
+                               onmousemove="displayImg('hoverImageDiv2', 'hoverDisplayImg2','./images/contact/qq.add.friend-blue.jpg')"
+                               onmouseout="vanishImg('hoverImageDiv2')"  onfocus="" onblur="">
+                            <img src="./images/logo/qq1.32x32.png" alt="加QQ"></a></li>
+                        <li><a href="javascript:copyMobileToClipboard('15216602141');" title="点击复制电话号码: 15216602141"  onfocus="" onblur="">
+                            <img src="./images/logo/mobile1.32x32.png" alt="" ></a></li>
 					</ul>
-				</div>				
+				</div>
+                <!--Hover动态显示的图片-->
+                <div id="hoverImageDiv2" class="hover-preview-image-div">
+                    <img id="hoverDisplayImg2" class="hover-preview-img" src="" alt="用手机扫码">
+                </div>
 			</article><!-- #ace-card -->
 
 			<aside class="widget-area">
@@ -559,7 +616,7 @@
     <footer id="ace-footer" class="ace-container-shift">
         <div class="ace-container">
 			<div class="ace-footer-cont clear-mrg">
-				<p class="text-center">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>				
+				<p class="text-center">Copyright &copy; 2024.Jerry(杰瑞)老师 All rights reserved.</p>
 			</div>
         </div><!-- .ace-container -->
     </footer><!-- #ace-footer -->
@@ -575,16 +632,12 @@
 </div><!-- .ace-wrapper -->
 
 <!-- Scripts -->
-<script type="text/javascript" src="js/vendor/jquery-1.12.4.min.js"></script>
-
-
-<!---<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyDiwY_5J2Bkv2UgSeJa4NOKl6WUezSS9XA"></script>--->
+<script type="text/javascript" src="js/framework/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/plugins/highlight/highlight.pack.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
 <script type="text/javascript" src="js/plugins/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="js/plugins/progressbar.min.js"></script>
 <script type="text/javascript" src="js/plugins/slick.min.js"></script>
-
 <script type="text/javascript" src="js/options.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
