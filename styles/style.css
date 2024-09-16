@@ -4462,7 +4462,7 @@ yx-axis
 }
 
 .slick-loading .slick-list {
-    background: url("img/ajax-loader.gif") center center no-repeat;
+    background: url("../images/ajax-loader.gif") center center no-repeat;
 }
 
 .slick-track {
@@ -6549,7 +6549,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1200;
 }
 
-/* Hover Preview Image class样式 */
+/* 首页鼠标Hover展示图片样式-start */
 .hover-preview-img{
     width:334px;
     height:334px;
@@ -6560,8 +6560,9 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 999; /* 设置较大的z-index值使其在最上层 */
     display: none;
 }
+/* 首页鼠标Hover展示图片样式-end */
 
-/* 自定义Alert弹框 */
+/* 自定义Alert弹框-start */
 #dialog {
     position: fixed;
     top: 0;
@@ -6608,4 +6609,82 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100%;
 }
+/* 自定义Alert弹框-end */
+
+/* 首页兴趣爱好-样式-start */
+.top_cat__area{padding-bottom:50px;}
+.cat_list{}
+.cat_list ul{text-align: center;}
+.cat_list li {
+	background: #fff;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	display: inline-flex;
+	align-items: center;
+	margin: 0 15px 20px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.cat_list ul li a {
+	color: #6d7193;
+	display: flex;
+	align-items: center;
+	padding: 8px 20px 8px 10px;
+	transition: all 0.25s ease-out;
+	transition: 0.3s;
+	font-family: icomoon;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease 0s;
+}
+.cat_list ul li a img {
+	width: 64px;
+	margin-right: 10px;
+	height: 64px;
+	border-radius: 100px;
+	border: 4px solid #ECEDFF;
+	background: #fff;
+}
+.cat_list ul li:hover{background:#525fe1;}
+.cat_list ul li a:hover{color:#fff;}
+/*END CATEGORY LIST*/
+/*START HOME TWO CATEGORY CSS*/
+.category_two_area{padding-bottom:50px;}
+.cat_list_two{
+text-align:center;
+padding:15px;
+border:2px solid #eee;
+border-radius:15px;
+margin-bottom:30px;
+transition: all 0.25s ease-out;
+	transition: 0.3s;
+}
+.cat_list_two:hover{border:2px solid #525fe1;}
+.cat_list_two img {
+	margin-bottom: 20px;
+	width: 100%;
+}
+.cat_list_two span {
+	background: #525fe1;
+	color: #fff;
+	padding: 2px 15px;
+	border-radius: 30px;
+	font-weight: 500;
+	/* line-height: 20px; */
+	font-size: 14px;
+	margin-bottom: 15px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.cat_list_two h4 a {
+	color: #0b104a;
+	font-weight: 600;
+	margin-bottom: 15px;
+	display: inline-block;
+	transition: 0.3s;
+}
+.cat_list_two p{}
+/* 首页兴趣爱好-样式-end */
 
