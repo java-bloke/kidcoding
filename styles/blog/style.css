@@ -2623,14 +2623,14 @@ textarea.form-control{
 	overflow: hidden;
 }
 .ppcontent h4{
-	font-size: 18px;
+	font-size: 15px;
 	margin-top: 0px;
 	margin-bottom: 1px;
 }
 .ppcontent span {
 	position: relative;
 	padding-left: 19px;
-	font-size: 16px;
+	font-size: 13px;
 	color: #1C3F39;
 }
 .ppcontent span::before {
@@ -2651,7 +2651,7 @@ textarea.form-control{
 	font-weight: 500;
 	padding: 4px 15px;
 	background: var(--f6);
-	margin-bottom: 13px;
+	margin-bottom: 3px;
 	border-radius: 4px;
 	transition: .5s;
 }

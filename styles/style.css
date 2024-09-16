@@ -347,7 +347,7 @@ dl {
 
 dt {
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 0.9em;
     letter-spacing: 0.01em;
 }
@@ -552,7 +552,7 @@ th, td {
 
 th {
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
 }
 
 table > thead > tr > th {
@@ -2342,7 +2342,7 @@ img.aligncenter {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     cursor: pointer;
     margin: 0;
     padding: 10px;
@@ -2666,7 +2666,7 @@ img.aligncenter {
     position: relative;
     font-size: 15px;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 45px;
 }
 
@@ -2710,13 +2710,20 @@ img.aligncenter {
     opacity: 1;
 }
 
+.widget_posts_entries li .post-image-64 {
+    float: left;
+    width: 64px;
+    margin-right: 24px;
+    opacity: 1;
+}
+
 .widget_posts_entries li h3 {
     margin: 0;
     display: block;
     font-size: 14px;
     line-height: 17px;
     color: #000;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
 }
 
 .widget_posts_entries a {
@@ -2781,7 +2788,7 @@ img.aligncenter {
 
 /* Post Categories */
 .widget_categories li {
-    padding: 15px 0;
+    padding: 1px 0;
     color: #9a9a9a;
 }
 
@@ -6428,7 +6435,7 @@ h1, h2, h3, h4, h5, h6 {
 .search-title {
     font-size: 1.250em;
     color: #757575;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: inline-block;
     position: relative;
     margin-top: 0;
@@ -6516,7 +6523,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-size: 1.500em;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 70px;
 }
 
@@ -6551,8 +6558,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 首页鼠标Hover展示图片样式-start */
 .hover-preview-img{
-    width:334px;
-    height:334px;
+    width:174px;
+    height:174px;
     border:black 1px solid;
 }
 .hover-preview-image-div{
@@ -6593,7 +6600,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     letter-spacing: 0.05em;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -6675,7 +6682,7 @@ transition: all 0.25s ease-out;
 	font-size: 14px;
 	margin-bottom: 15px;
 	display: inline-block;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 0.5px;
 }
 .cat_list_two h4 a {
@@ -6688,3 +6695,8 @@ transition: all 0.25s ease-out;
 .cat_list_two p{}
 /* 首页兴趣爱好-样式-end */
 
+/* 多个img展示在同一行样式（Images in Same Line） */
+.inline-img {
+    display: inline-block; /* 或者使用 display: inline; */
+    margin-right: 30px; /* 可选，为了在图片之间添加间隔 */
+}
