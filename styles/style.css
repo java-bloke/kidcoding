@@ -1678,7 +1678,7 @@ submit
     font-size: 30px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .title {
@@ -4938,7 +4938,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
     .padd-box-sm {
-        margin-left: 12%;
+        margin-left: 2%;
         margin-right: 12%;
     }
 }
@@ -6558,8 +6558,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 首页鼠标Hover展示图片样式-start */
 .hover-preview-img{
-    width:174px;
-    height:174px;
+    width:178px;
+    height:178px;
     border:black 1px solid;
 }
 .hover-preview-image-div{
@@ -6696,7 +6696,12 @@ transition: all 0.25s ease-out;
 /* 首页兴趣爱好-样式-end */
 
 /* 多个img展示在同一行样式（Images in Same Line） */
-.inline-img {
+.inline-img-30 {
     display: inline-block; /* 或者使用 display: inline; */
     margin-right: 30px; /* 可选，为了在图片之间添加间隔 */
+}
+
+.inline-img-50 {
+    display: inline-block; /* 或者使用 display: inline; */
+    margin-right: 50px; /* 可选，为了在图片之间添加间隔 */
 }

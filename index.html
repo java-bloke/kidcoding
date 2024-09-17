@@ -16,16 +16,6 @@
     <link href="./styles/blog/style.css" rel="stylesheet">
     <script src="./js/framework/modernizr-3.3.1.min.js" type="text/javascript" ></script>
     <script src="./js/framework/hover-preview-image.js" type="text/javascript" ></script>
-    <script>
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "ace-sidebar.html", true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                document.getElementById("ace-sidebar").innerHTML = xhr.responseText;
-            }
-        };
-        xhr.send();
-    </script>
   </head>
   <body>
      <div class="ace-wrapper">
@@ -94,12 +84,12 @@
 				<p class="text-muted">少儿编程 | 软件开发</p>
 				<ul class="ace-social clear-list">
 					<li><a href="index.html" title="去首页"><img src="./images/logo/index.32x32.png" alt="" ></a></li>
-					<li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.vx-green174x174.png')"
-                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.vx-green174x174.png')"
+					<li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.vx-green178x178.png')"
+                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.vx-green178x178.png')"
                            onmouseout="vanishImg('hoverImageDiv')" onfocus="" onblur="">
                         <img src="./images/logo/vx1.32x32.png" alt="加微信"></a></li>
-					<li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.qq-blue174x174.png')"
-                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.qq-blue174x174.png')"
+					<li><a onmouseover="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.qq-blue178x178.png')"
+                           onmousemove="displayImg('hoverImageDiv', 'hoverDisplayImg','./images/contact/add.friend.qq-blue178x178.png')"
                            onmouseout="vanishImg('hoverImageDiv')"  onfocus="" onblur="">
                         <img src="./images/logo/qq1.32x32.png" alt="加QQ"></a></li>
 					<li><a href="javascript:copyMobileToClipboard('15216602141');" title="点击复制手机号: 15216602141"  onfocus="" onblur="">
@@ -220,7 +210,9 @@
                         <dd>互联网金融·软件开发工程师</dd>
 
                         <dt class="text-upper">联系地址：</dt>
-                        <dd>上海市, 浦东新区, 大团镇, 南芦公路989弄同润蓝美俊庭281号1601室</dd>
+                        <dd><a href="https://map.baidu.com/poi/%E5%90%8C%E6%B6%A6%E8%93%9D%E7%BE%8E%E4%BF%8A%E5%BA%AD/@13553804.380188683,3606564.178137404,17.33z?uid=bbc459a8a5055f97be484272&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl"
+                               title="点击查看百度地图位置" target="_blank" onfocus="" onblur="">
+                            (<img src="./images/logo/address7.24x24.png" alt="" >)</a></dd>
                     </dl>
                 </div><!-- .col-sm-6 -->
 
@@ -477,6 +469,16 @@
     <!-- 侧边导航栏-start -->
     <div id="ace-sidebar">
         <!-- 通过XMLHttpRequest请求动态导入ace-sidebar.html文件 -->
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "ace-sidebar.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("ace-sidebar").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        </script>
 	</div>
     <!-- 侧边导航栏-end -->
 
