@@ -10,7 +10,6 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
-
 :root {
   --title: #222;
   --body: #555;
@@ -41,11 +40,18 @@ body {
 	font-size: 16px;
 	line-height: 1.7;
 	font-weight: 400;
+	/*滚动条overflow属性值：
+      1、visible：默认值，内容不会被修剪，会呈现在元素框之外。
+      2、hidden：内容会被修剪，并且其余内容是不可见的。
+      3、scroll：总是显示滚动条。
+      4、auto：如果内容的宽度和高度超过了元素的宽度和高度，就会显示滚动条。*/
 	overflow-x: hidden;
 	position: relative;
 }
+
 html,
 body { height: 100% ;}
+
 h1,
 h2,
 h3,
