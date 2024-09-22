@@ -2897,14 +2897,26 @@ textarea.form-control{
 /*-------------------------------
 # Banner
 --------------------------------*/
-
 .main-banner {
+    /* 确保section容器有足够的高度和宽度: height: 100%; width: 100%; */
+    /* width: 100vw; 使section宽度等于视口宽度 */
+    /* 注意：使用100vw可能会导致水平滚动条出现，因为这会包括滚动条的宽度。
+       你可以考虑使用calc()函数减去一些宽度来避免这个问题，例如：
+       width: calc(100vw - 10px);
+       但请注意，这仍然可能依赖于浏览器如何处理滚动条和视口宽度。
+       max-width: 1920px;
+       min-width: 1200px;
+    */
+    margin: 0 auto;
+
 	position: relative;
 	color: var(--title);
 	padding: 110px 0;
 	z-index: 1;
-	background-size: cover;
-	background-repeat: no-repeat;
+	/* section容器的背景图片设置，background-image: url('your-image-url.jpg'); 放在section容器外部署指定 */
+	background-size: cover; /* cover; 覆盖整个容器，可能会裁剪图片 */
+	background-repeat: no-repeat; /* 不重复 */
+	background-position: center; /* 图片居中显示 */
 	overflow: hidden;
 }
 
