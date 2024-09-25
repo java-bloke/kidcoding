@@ -2897,34 +2897,52 @@ textarea.form-control{
 /*-------------------------------
 # Banner
 --------------------------------*/
-.main-banner {
-    /* 确保section容器有足够的高度和宽度: height: 100%; width: 100%; */
-    /* width: 100vw; 使section宽度等于视口宽度 */
-    /* 注意：使用100vw可能会导致水平滚动条出现，因为这会包括滚动条的宽度。
-       你可以考虑使用calc()函数减去一些宽度来避免这个问题，例如：
-       width: calc(100vw - 10px);
-       但请注意，这仍然可能依赖于浏览器如何处理滚动条和视口宽度。
-       max-width: 1920px;
-       min-width: 1200px;
-    */
+.blog-banner {
+/* 确保section容器有足够的高度和宽度:
+    height: 100%;
+    width: 100%;
+    width: 100vw;  使section宽度等于视口宽度
+    width: calc(100vw - 10px);  使用calc()函数减去滚动条的宽度
+    max-width: 1920px;
+    min-width: 1200px;
+*/
+    width: 100vw;
+    /* margin: 上下左右外边距; 第一个表示上下边距，第二个表示左右编辑；因为0 auto，表示上下边界为0，左右则根据宽度自适应相同值（即水平居中） */
     margin: 0 auto;
+    /* padding: 20px 20px 20px 20px; 四个参数表示padding-top上 padding-right右 padding-bottom下 padding-left左内边距;
+      上 左右 下 20px 30px 40px;
+      上下 左右 20px 30px;
+      上下左右 20px;
+    */
+	padding: 0;
+	position: relative;
+	color: var(--title);
+	/* 当元素之间重叠的时候，z-index 较大的元素会覆盖较小的元素在上层进行显示。 */
+	z-index: 1;
+	/* section容器的背景图片设置，background-image: url('your-image-url.jpg'); 放在section容器外部署指定 */
+	/* 设置背景图片的大小。可以使用的值包括具体长度值、百分比、cover（保持纵横比缩放图片以完全覆盖容器）、contain（保持纵横比缩放图片以适应容器大小） */
+	background-size: cover; /* cover; 覆盖整个容器，可能会裁剪图片 */
+	background-repeat: no-repeat; /* 不重复 */
+	/* 图片对齐方位置: 左上角对齐left top; 右下角对齐right bottom; 居中center; 位移(x)px (y)px; 宽高百分比超出隐藏(w)% (h)%; */
+	background-position: center;
+	/* overflow: hidden; 当元素内的内容溢出的时候使它隐藏溢出的部分，即超出部分隐藏 */
+}
 
+.main-banner {
 	position: relative;
 	color: var(--title);
 	padding: 110px 0;
 	z-index: 1;
-	/* section容器的背景图片设置，background-image: url('your-image-url.jpg'); 放在section容器外部署指定 */
-	background-size: cover; /* cover; 覆盖整个容器，可能会裁剪图片 */
-	background-repeat: no-repeat; /* 不重复 */
-	background-position: center; /* 图片居中显示 */
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
-.main-banner h2{
+.main-banner h2, .blog-banner h2 {
 	color: var(--title);
 	margin-bottom: 20px;	
 }
-.main-banner p {
+.main-banner p, .blog-banner p {
 	color: var(--body);
 	background: var(--white);
 	display: inline-block;
@@ -2934,10 +2952,10 @@ textarea.form-control{
 	font-weight: 500;
 }
 
-.main-banner a{
+.main-banner a, .blog-banner a {
 	color: var(--blue);
 }
-.main-banner i {
+.main-banner i, .blog-banner i {
 	position: relative;
 	top: 2px;
 }
