@@ -552,7 +552,7 @@ th, td {
 
 th {
     font-weight: 700;
-    /*text-transform: uppercase; */
+    /* text-transform: uppercase; */
 }
 
 table > thead > tr > th {
@@ -2342,7 +2342,7 @@ img.aligncenter {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
-    /*text-transform: uppercase; */
+    /* text-transform: uppercase; */
     cursor: pointer;
     margin: 0;
     padding: 10px;
@@ -2723,7 +2723,7 @@ img.aligncenter {
     font-size: 14px;
     line-height: 17px;
     color: #000;
-    /*text-transform: uppercase; */
+    /* text-transform: uppercase; */
 }
 
 .widget_posts_entries a {
@@ -6143,7 +6143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ref-author strong {
-/*    text-transform: uppercase; */
+ /* text-transform: uppercase; */
     margin-bottom: 5px;
 }
 

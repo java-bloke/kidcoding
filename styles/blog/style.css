@@ -917,7 +917,7 @@ img{
 .bsubtitle {
 	font-size: 18px;
 	font-weight: 500;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: var(--title);
 }
 .btitle{
