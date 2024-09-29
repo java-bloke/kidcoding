@@ -47,7 +47,6 @@
 	<link href="../../styles/blog/style.css" rel="stylesheet">
 	<!-- Responsive CSS -->
 	<link href="../../styles/blog/responsive.css" rel="stylesheet">
-
 	<script src="../../js/framework/modernizr-3.3.1.min.js" type="text/javascript" ></script>
 	<script src="../../js/framework/hover-preview-image.js" type="text/javascript" ></script>
 </head>
@@ -121,7 +120,7 @@
 					<!-- 文章内容 -->
 					<div class="col-xl-8 col-lg-8 col-md-12 col-12 wow fadeIn">
 						<div class="post-inner">
-							<h3>第一步：认识三阶魔方</h3>
+							<h3 id="chapter1">第一步：认识三阶魔方</h3>
 							<p>三阶魔方很简单，知道规律剩下的就交给练习了。下面我们来认识一下三阶魔方：</p>
 							<div class="post-image">
 								<img src="../../images/blog/Cube/cube01.jpg" alt="">
@@ -137,7 +136,7 @@
 							</div>
 							<br>
 
-							<h3>第二步：魔方公式</h3>
+							<h3 id="chapter2">第二步：魔方公式</h3>
 							<div class="entry-content">
 								<p>魔方一共六个面：<br>
 									左 == left | 右 == right <br>
@@ -151,7 +150,7 @@
 							</div>
 							<br>
 
-							<h3>第三步：底部十字还原</h3>
+							<h3 id="chapter3">第三步：底部十字还原</h3>
 							<p>三阶魔方底部十字还原，没有具体的公式。可分为两步，先做成顶部小花，再对齐中心角块颜色。效果如下图所示：</p>
 							<div class="post-image">
 								<img src="../../images/blog/Cube/cube02.jpg" alt="">
@@ -164,7 +163,7 @@
 							</div>
 							<br>
 
-							<h3>第四步：底部边角还原（第一层）</h3>
+							<h3 id="chapter4">第四步：底部边角还原（第一层）</h3>
 							<div class="post-image">
 								<img src="../../images/blog/Cube/cube03.jpg" alt="">
 							</div>
@@ -182,7 +181,7 @@
 							<h6>*温馨提示：</h6><p>恭喜你，到这一步，底部一层就完成啦！后续步骤难度剧增，建议先收藏再慢慢看。</p>
 							<br>
 
-							<h3>第五步：中间边角还原（第二层）</h3>
+							<h3 id="chapter5">第五步：中间边角还原（第二层）</h3>
 							<div class="post-image">
 								<img src="../../images/blog/Cube/cube04.jpg" alt="">
 							</div>
@@ -198,7 +197,7 @@
 							<p>如果发现顶部没有第二层棱块的颜色，可以在其他棱边中心块处找找，然后做一遍公式替换到顶层，再根据以上2种情况处理。这样四个棱块都对齐，第二层就完成啦。</p>
 							<br>
 
-							<h3>第六步：顶部十字还原</h3>
+							<h3 id="chapter6">第六步：顶部十字还原</h3>
 							<div class="post-image">
 								<img src="../../images/blog/Cube/cube05.jpg" alt="">
 							</div>
@@ -212,7 +211,7 @@
 							</div>
 							<br>
 
-							<h3>第七步：顶部边角还原</h3>
+							<h3 id="chapter7">第七步：顶部边角还原</h3>
 							<div class="post-image">
 								<img src="../../images/blog/Cube/cube06.jpg" alt="">
 							</div>
@@ -249,7 +248,7 @@
 							</div>
 							<br>
 
-							<h3>第八步：顶部中间还原（顶层）</h3>
+							<h3 id="chapter8">第八步：顶部中间还原（顶层）</h3>
 							<p>先找到清一色边，把清一色边放到后面，选择顺逆任意公式操作后观察选择对应的顺逆公式直到完成魔方：<br>
 								公式(顺时针)：右下，右下，顶左，右上，顶左，右下，顶右，右下，顶右，右下，顶左，右下<br>
 								公式(逆时针)：右上，顶右，右上，顶左，右上，顶左，右上，顶右，右下，顶右，右上，右上</p>
@@ -274,17 +273,17 @@
 					</div><!-- END Col -->
 					
 					<div class="col-xl-4 col-lg-4 col-12 sidebar">
-						<div class="widget category-widget wow fadeIn">
+						<div id="chapter-sidebar" class="widget category-widget wow fadeIn">
 							<h3 class="widget-title">本文目录</h3>
 							<ul>
-								<li><a href="#">第一步：认识三阶魔方</a></li>
-								<li><a href="#">第二步：魔方公式</a></li>
-								<li><a href="#">第三步：底部十字还原</a></li>
-								<li><a href="#">第四步：底部边角还原（第一层）</a></li>
-								<li><a href="#">第五步：中间边角还原（第二层）</a></li>
-								<li><a href="#">第六步：顶部十字还原</a></li>
-								<li><a href="#">第七步：顶部边角还原</a></li>
-								<li><a href="#">第八步：顶部中间还原（顶层） </a></li>
+								<li><a href="#chapter1">第一步：认识三阶魔方</a></li>
+								<li><a href="#chapter2">第二步：魔方公式</a></li>
+								<li><a href="#chapter3">第三步：底部十字还原</a></li>
+								<li><a href="#chapter4">第四步：底部边角还原（第一层）</a></li>
+								<li><a href="#chapter5">第五步：中间边角还原（第二层）</a></li>
+								<li><a href="#chapter6">第六步：顶部十字还原</a></li>
+								<li><a href="#chapter7">第七步：顶部边角还原</a></li>
+								<li><a href="#chapter8">第八步：顶部中间还原（顶层） </a></li>
 							</ul>
 						</div><!-- End widget -->
 
