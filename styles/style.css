@@ -6707,3 +6707,10 @@ transition: all 0.25s ease-out;
     display: inline-block; /* 或者使用 display: inline; */
     margin-right: 50px; /* 可选，为了在图片之间添加间隔 */
 }
+
+.red-bg-white-font {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+

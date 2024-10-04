@@ -5,11 +5,15 @@ function isMobile() {
     var screenWidth = getScreenWidth();
     console.log('The isMobile() screenWidth='+ screenWidth);
     // 判断是否是手机
-    return screenWidth < 500;
+    return screenWidth < 700;
 }
 
 function getScreenWidth() {
-    return window.screen.width || window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    console.log('InnerWidth='+ window.innerWidth);
+    console.log('ScreenWidth='+ window.screen.width);
+    console.log('body.ClientWidth='+ document.body.clientWidth);
+    console.log('doc.ClientWidth='+ document.documentElement.clientWidth);
+    return document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth || window.screen.width;
 }
 
 /*
