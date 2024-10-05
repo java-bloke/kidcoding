@@ -3239,7 +3239,7 @@ yx-axis
 .mCSB_scrollTools .mCSB_buttonDown,
 .mCSB_scrollTools .mCSB_buttonLeft,
 .mCSB_scrollTools .mCSB_buttonRight {
-    background-image: url(mCSB_buttons.png);
+    background-image: url(../images/mCSB_buttons.png);
     /* css sprites */
     background-repeat: no-repeat;
     opacity: 0.4;
@@ -5454,7 +5454,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
- * Sidebar
+ * Sidebar 伸缩侧边栏样式
  */
 #ace-sidebar {
     top: 0;
@@ -6378,8 +6378,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pf-popup-media {
-    width: 590;
-    height: 890;
+    width: 590px;
+    height: 890px;
     /* padding-top: 66%; */
     padding: 10px 10px;
     background-color: #f0f0f0;
@@ -6714,3 +6714,7 @@ transition: all 0.25s ease-out;
     color: white;
 }
 
+/* 缩进50px */
+.retract50 {
+    text-indent: 50px; /* 设置段落首行缩进2em（1em = 当前标签的字号大小） */
+}

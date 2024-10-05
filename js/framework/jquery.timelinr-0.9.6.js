@@ -271,3 +271,11 @@ function autoPlay(){
 		}
 	}
 }
+
+$(function(){
+	$().timelinr({
+		autoPlay: 'true',
+		autoPlayDirection: 'forward',
+		autoPlayPause:5000
+	})
+});

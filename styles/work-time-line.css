@@ -1,7 +1,7 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
-}
+} */
 
 .timeline-container {
 	margin: 0 auto;
@@ -81,8 +81,8 @@
     transform: scale(1.1,1.1);
 }
 #issues li img {
-	max-width: 256;
-  max-height: 256;
+	max-width: 256px;
+    max-height: 256px;
 
 	float: left;
 	margin: 10px 30px 10px 50px;
