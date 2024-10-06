@@ -6378,12 +6378,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pf-popup-media {
-    width: 590px;
-    height: 890px;
+    max-width: 890px;
+    max-height: 590px;
     /* padding-top: 66%; */
     padding: 10px 10px;
     background-color: #f0f0f0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {

@@ -2673,8 +2673,11 @@ textarea.form-control{
 
 /* Start Blog Details */
 
+/* 博客图片样式, 高宽比自适应 */
 .post-image{
-	margin-bottom: 30px;
+  max-width: 980px;
+  height: auto;
+	margin-bottom: 10px;
 }
 .post-nav.pnavigation{
 	margin-top: 40px;
