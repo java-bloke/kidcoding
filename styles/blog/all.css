@@ -29,7 +29,8 @@
 .fa-solid,
 .far,
 .fa-regular {
-  font-family: 'Font Awesome 6 Free'; }
+  font-family: 'Font Awesome 6 Free';
+}
 
 .fab,
 .fa-brands {
@@ -7821,7 +7822,8 @@ readers do not read off random characters that represent icons */
 
 .far,
 .fa-regular {
-  font-weight: 400; }
+  font-weight: 400;
+}
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
   --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
