@@ -3877,13 +3877,13 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item:hover .content .shape {
 .schedule-item .schedule-inner::before {
     left: 190px;
     bottom: -1px;
-    background: url(../image/schedule-shape.jpg) no-repeat bottom center;
+    background: url(../../images/icon/schedule-shape.jpg) no-repeat bottom center;
 }
 
 .schedule-item .schedule-inner::after {
     left: 190px;
     top: -1px;
-    background: url(../image/schedule-shape-2.jpg) no-repeat bottom center;
+    background: url(../../images/icon/schedule-shape-2.jpg) no-repeat bottom center;
 }
 
 .schedule-item .schedule-inner .author-area {
@@ -3985,7 +3985,7 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item:hover .content .shape {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        background: url(../image/schedule-shape-4.jpg) no-repeat bottom center;
+        background: url(../../images/icon/schedule-shape-4.jpg) no-repeat bottom center;
         height: 33px;
         width: 11px;
     }
@@ -3997,7 +3997,7 @@ div[class*=col]:nth-of-type(4n + 4) .feature-item:hover .content .shape {
         -webkit-transform: translateY(50%);
         -ms-transform: translateY(50%);
         transform: translateY(50%);
-        background: url(../image/schedule-shape-3.jpg) no-repeat bottom center;
+        background: url(../../images/icon/schedule-shape-3.jpg) no-repeat bottom center;
         height: 33px;
         width: 11px;
     }
