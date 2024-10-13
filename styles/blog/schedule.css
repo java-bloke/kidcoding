@@ -278,7 +278,7 @@ font-style: normal;
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-// 全删除
+/* 全删除 */
 
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1009,7 +1009,7 @@ input[type=submit] {
 
 .section-header .title span {
     color: #FF7700;
-    font-weight: 300 bold; /* bold加粗 */
+    font-weight: bold; /* bold加粗 */
 }
 
 .section-header p {
