@@ -1686,6 +1686,11 @@ submit
     font-weight: 700;
 }
 
+.title18 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .title-sm {
     font-size: 20px;
 }

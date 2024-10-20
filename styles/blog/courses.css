@@ -3,28 +3,28 @@
   	Creation date: 16/11/2023 18:13
 */
 @font-face {
-  font-family: "Flaticon";
-  src: url("../font/Flaticon.eot");
-  src: url("../font/Flaticon.eot") format("embedded-opentype"),
-       url("../font/Flaticon.woff2") format("woff2"),
-       url("../font/Flaticon.woff") format("woff"),
-       url("../font/Flaticon.ttf") format("truetype"),
-       url("../font/Flaticon.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Flaticon";
+    src: url("../font/Flaticon.eot");
+    src: url("../font/Flaticon.eot") format("embedded-opentype"),
+    url("../font/Flaticon.woff2") format("woff2"),
+    url("../font/Flaticon.woff") format("woff"),
+    url("../font/Flaticon.ttf") format("truetype"),
+    url("../font/Flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("../font/Flaticon.svg") format("svg");
-  }
+    @font-face {
+        font-family: "Flaticon";
+        src: url("../font/Flaticon.svg") format("svg");
+    }
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-  font-family: Flaticon;
-font-style: normal;
+    font-family: Flaticon;
+    font-style: normal;
 }
 
 .flaticon-loupe:before { content: "\f100"; }
@@ -192,7 +192,7 @@ font-style: normal;
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important;
+    display: none !important;
 }
 
 /*
@@ -204,16 +204,16 @@ font-style: normal;
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-  /* 1 */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
 }
 
 /*
@@ -223,20 +223,20 @@ font-style: normal;
 */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
 }
 
 /*
 * Hide visually and from screen readers, but maintain layout
 */
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -252,14 +252,14 @@ font-style: normal;
 */
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 /* ==========================================================================
@@ -268,10 +268,10 @@ font-style: normal;
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+    /* Style adjustments for high resolution devices */
 }
 /* ==========================================================================
    Print styles.
@@ -581,9 +581,9 @@ legend {
  */
 [type=search] {
     -webkit-appearance: textfield;
-  /* 1 */
+    /* 1 */
     outline-offset: -2px;
-  /* 2 */
+    /* 2 */
 }
 
 /**
@@ -599,9 +599,9 @@ legend {
  */
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-  /* 1 */
+    /* 1 */
     font: inherit;
-  /* 2 */
+    /* 2 */
 }
 
 /* Interactive
@@ -5914,12 +5914,12 @@ blockquote::before {
 }
 
 /* .custom-button */ .i:last-child {
-    padding-left: 10px;
-}
+                         padding-left: 10px;
+                     }
 
 /* .custom-button */ .i:first-child {
-    padding-right: 10px;
-}
+                         padding-right: 10px;
+                     }
 
 .custom-button:hover {
     color: #FF7700;
