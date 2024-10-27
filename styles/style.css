@@ -6713,10 +6713,19 @@ transition: all 0.25s ease-out;
     margin-right: 50px; /* 可选，为了在图片之间添加间隔 */
 }
 
+/* 高亮文字样式 */
 .red-bg-white-font {
     font-weight: bold;
+    font-size: small;
     background-color: red;
     color: white;
+}
+
+.yellow-bg-red-font {
+    font-weight: bold;
+    font-size: small;
+    background-color: yellow;
+    color: #FF0000;
 }
 
 /* 缩进50px */
