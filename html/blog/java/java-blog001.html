@@ -32,9 +32,20 @@
 	<link href="../../../styles/blog/slick-theme.css" rel="stylesheet">
 	<link href="../../../styles/blog/style.css" rel="stylesheet">
 	<link href="../../../styles/blog/responsive.css" rel="stylesheet">
+	<link href="../../../styles/highlight/a11y-dark.css" rel="stylesheet">
+	<link href="../../../styles/highlight/line-numbers.css" rel="stylesheet">
 
 	<script src="../../../js/framework/modernizr-3.3.1.min.js" type="text/javascript" ></script>
 	<script src="../../../js/framework/hover-preview-image.js" type="text/javascript" ></script>
+	<script src="../../../js/highlight/highlight.min.js" type="text/javascript" ></script>
+	<script src="../../../js/highlight/highlightjs-line-numbers.min.js" type="text/javascript" ></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+		hljs.initLineNumbersOnLoad({
+			singleLine: true
+		});
+		hljs.highlightAll();
+	</script>
 </head>
 <body>
 	<!-- START PRELOADER -->
@@ -111,88 +122,146 @@
 					<!-- 文章内容 -->
 					<div class="col-xl-8 col-lg-8 col-md-12 col-12 wow fadeIn">
 						<div class="post-inner">
-							<h3 id="chapter1">第一步：安装WebStorm软件</h3>
+							<h3 id="chapter1">第一步：准备安装文件</h3>
 							<div class="entry-content">
 								<p>联系Jerry老师要安装文件：</p>
-								<p>1、集成开发工具：WebStorm-2024.2.3.exe</p>
-								<p>2、激活工具包: JetBrainsActivationCodes.zip</p>
+								<p>1、JDK：jdk-8u411-windows-x64.exe</p>
+								<p>2、Maven构建工具: apache-maven-3.9.8-bin.zip</p>
+								<p>3、代码管理工具：Git-2.45.2-64-bit.exe</p>
+								<p>4、集成开发工具：ideaIC-2024.1.4.exe</p>
 							</div>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm01.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java01.png" alt="">
 							</div>
 							<br>
 
-							<h3 id="chapter2">第二步：选择安装目录</h3>
+							<h3 id="chapter2">第二步：安装JDK开发工具包</h3>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm02.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java02.png" alt="">
+							    <p>选择安装目录</p>
+								<img src="../../../images/blog/Java/IDEA/Java03.png" alt="">
+								<p>JDK安装完毕后，弹窗提示安装jre选择其安装目录，这一步可以点【取消】</p>
+								<img src="../../../images/blog/Java/IDEA/Java04.png" alt="">
 							</div>
 							<br>
-
-							<h3 id="chapter3">第三步：勾选安装选项</h3>
-							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm03.png" alt="">
-							</div>
-							<br>
-
-							<h3 id="chapter4">第四步：等待安装完成</h3>
-							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm04.png" alt="">
-							</div>
-							<br>
-
-							<h3 id="chapter5">第五步：安装程序结束</h3>
-							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm05.png" alt="">
-							</div>
-							<br>
-
-							<h3 id="chapter6">第六步：执行激活脚本</h3>
 							<div class="entry-content">
-								<p>若此前有安装激活过JetBrains相关的开发集成工具，则跳过这一步执行下面第七步；</p>
-								<p>在这里只需要解压缩这个激活工具包: JetBrainsActivationCodes.zip 即可；</p>
-								<p>若此前没有安装激活过JetBrains相关工具，则请移步查阅老师往期教程执行这第六步：</p>
-								<a target="_blank" href="../cpp/cpp-blog001.html#chapter6">👉️点击查看【第六步：执行激活脚本】</a>
+								<p>接下来配置JDK环境变量：</p>
+								<p>1.新建系统变量 JAVA_HOME，变量值JDK安装根目录：</p>
+								<p class="black-bg-white-font">C:\Java\jdk-1.8</p>
+								<p>2.再新建 classpath，变量名classpath，变量值：</p>
+								<p class="black-bg-white-font">.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</p>
+								<p>3.编辑系统变量中的path，依次添加下面两条：</p>
+								<p class="black-bg-white-font">%JAVA_HOME%\bin</p>
+								<p class="black-bg-white-font">%JAVA_HOME%\jre\bin</p>
+							</div>
+							<div class="post-image">
+								<img src="../../../images/blog/Java/IDEA/Java05.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java06.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java07.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java08.png" alt="">
+							</div>
+							<br>
+							<p>最后检查JDK安装是否可用：</p>
+							<p>4.检查JDK安装，按住键盘win+r 输入cmd，然后输入：java -version</p>
+							<div class="post-image">
+								<img src="../../../images/blog/Java/IDEA/Java09.png" alt="">
 							</div>
 							<br>
 
-							<h3 id="chapter7">第七步：激活WebStorm软件</h3>
-							<p>安装完成后，回到桌面，双击WebStorm软件图标打开运行软件：</p>
+							<h3 id="chapter3">第三步：安装配置Maven</h3>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm06.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java10.png" alt="">
+							</div>
+							<div class="entry-content">
+								<p>接下来配置Mvn环境变量：</p>
+								<p>1.新建系统变量 MAVEN_HOME，变量值Maven根目录：</p>
+								<p class="black-bg-white-font">D:\Maven\apache-maven-3.9.8</p>
+								<p>2.编辑系统变量 Path，添加变量值：：</p>
+								<p class="black-bg-white-font">%MAVEN_HOME%\bin</p>
 							</div>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm07.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java11.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java12.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java13.png" alt="">
 							</div>
-							<p>找到激活码文件：</p>
+							<br>
+							<p>3.检查Mvn是否可用</p>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm08.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java14.png" alt="">
 							</div>
-							<p>打开激活码文件进行复制：</p>
-							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm09.png" alt="">
+
+							<div class="entry-content">
+								<p>4.安装完成后，还需要编辑Maven的配置文件~/conf/settings.xml：</p>
+								<p>4.1配置Maven本地仓库：</p>
+								<p class="black-bg-white-font">&lt;localRepository&gt;D:\Maven\repository&lt;/localRepository&gt;</p>
+								<p>4.2添加server账号密码；</p>
+								<p>4.3配置中央仓库的镜像mirror（阿里云中央仓库镜像）；
+									<img class="btn" data-clipboard-action="copy" data-clipboard-target="#cCode01" src="../../../images/icon/copy.png"
+										 style="cursor:pointer" alt="复制代码" >
+								</p>
+<pre><code id="cCode01" class="language-xml" data-ln-single-line="true" data-ln-start-from="1">
+&lt;!-- 配置中央仓库的镜像（阿里云中央仓库镜像）--&gt;
+&lt;mirror&gt;
+	&lt;id&gt;alimaven&lt;/id&gt;
+	&lt;name&gt;aliyun-maven&lt;/name&gt;
+	&lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+	&lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+&lt;/mirror&gt;</code></pre>
 							</div>
-							<p>粘贴激活码进行激活：</p>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm10.png" alt="">
-							</div>
-							<p>检查激活后的有效日期：</p>
-							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm11.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java15.png" alt="">
 							</div>
 							<br>
 
-							<h3 id="chapter8">第八步：新建或打开项目</h3>
+							<h3 id="chapter4">第四步：安装Git工具</h3>
+							<p>*注：提示若不用Git仓库管理代码，则可以不用安装Git工具，直接跳到下面安装步验。</p>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm12.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java16.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java17.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java18.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java19.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java20.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java21.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java22.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java23.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java24.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java25.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java26.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java27.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java28.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java29.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java30.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java31.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java32.png" alt="">
 							</div>
+							<p>检查Git是否可用，随便找个文件资源目录空白处点击鼠标右键菜单，点击【Open Git Bash here】进入命令行；
+								或跟之前使用Win+R打开运行弹窗输出“cmd”进入命令行。输入“git -v”查看git安装版本：</p>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm13.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java33.png" alt="">
 							</div>
 							<br>
 
-							<h3 id="chapter9">第九步：编写JS程序并运行</h3>
+							<h3 id="chapter5">第五步：安装IDEA集成开发工具</h3>
 							<div class="post-image">
-								<img src="../../../images/blog/JavaScript/WebStorm/WebStorm14.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java34.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java35.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java36.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java37.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java38.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java39.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java40.png" alt="">
+								<p>启动IDEA，并安装汉化插件：</p>
+								<img src="../../../images/blog/Java/IDEA/Java41.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java42.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java43.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java44.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java45.png" alt="">
+								<p>汉化插件安装完毕后，重启IDEA看到它的界面已全变为汉字：</p>
+								<img src="../../../images/blog/Java/IDEA/Java46.png" alt="">
+								<p>开始创建项目，编写并运行第一个Java程序：</p>
+								<img src="../../../images/blog/Java/IDEA/Java47.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java48.png" alt="">
+								<img src="../../../images/blog/Java/IDEA/Java49.png" alt="">
 							</div>
 							<br>
 
@@ -327,5 +396,19 @@
 	<script type="text/javascript" src="../../../js/main.js"></script>
 	<script type="text/javascript" src="../../../js/blog/scroll-top.js"></script>
 	<script type="text/javascript" src="../../../js/blog/scripts.js"></script>
+	<script src="../../../js/highlight/clipboard.min.js"></script>
+	<script>
+		var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function (e) {
+			alert("复制成功，请去粘贴...");
+		});
+
+		clipboard.on('error', function (e) {
+			console.info('Action:', e.action);
+			console.info('Trigger:', e.trigger);
+			console.info('Text:', e.text);
+			alert("复制失败，请联系开发者!!!");
+		});
+	</script>
     </body>
 </html>

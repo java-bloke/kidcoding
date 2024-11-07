@@ -6714,6 +6714,13 @@ transition: all 0.25s ease-out;
 }
 
 /* 高亮文字样式 */
+.black-bg-white-font {
+    font-weight: bold;
+    font-size: small;
+    background-color: black;
+    color: white;
+}
+
 .red-bg-white-font {
     font-weight: bold;
     font-size: small;
